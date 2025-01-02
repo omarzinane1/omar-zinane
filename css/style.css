@@ -5,10 +5,11 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #272829;
+  background: white;
 }
 
 a {
-  color: #0563bb;
+  color: #6cbb05;
   text-decoration: none;
 }
 
@@ -39,7 +40,7 @@ p
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #0563bb;
+  background: #dfa528;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -53,7 +54,7 @@ p
 }
 
 .back-to-top:hover {
-  background: #0678e3;
+  background: #f5d15b;
   color: #fff;
 }
 
@@ -207,7 +208,7 @@ p
 .nav-menu .active:focus,
 .nav-menu li:hover>a {
   color: #fff;
-  background: #0563bb;
+  background: #e68e0a;
 }
 
 .nav-menu a:hover span,
@@ -297,18 +298,18 @@ p
   font-size: 64px;
   font-weight: 700;
   line-height: 56px;
-  color: #e5e9ec;
+  color: #ece9e5;
 }
 
 #hero p {
-  color: #eaeef1;
+  color: #eaecf1;
   margin: 15px 0 0 0;
   font-size: 26px;
   font-family: "Poppins", sans-serif;
 }
 
 #hero p span {
-  color: #0563bb;
+  color: #df720d;
   letter-spacing: 1px;
 }
 
@@ -387,7 +388,7 @@ section {
   display: block;
   width: 40px;
   height: 3px;
-  background: #0563bb;
+  background: #c90d0d;
   bottom: 0;
   left: calc(50% - 20px);
 }
@@ -449,7 +450,7 @@ section {
   left: 50%;
   transform: translateX(-50%);
   font-size: 24px;
-  background: #0563bb;
+  background: #d37509;
   color: #fff;
   border-radius: 50px;
   display: inline-flex;
@@ -463,7 +464,7 @@ section {
   font-size: 36px;
   display: block;
   font-weight: 600;
-  color: #011426;
+  color: #d37509;
 }
 
 .facts .count-box p {
@@ -474,7 +475,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Akills
+# Skills
 --------------------------------------------------------------*/
 .skills .progress {
   height: 60px;
@@ -490,7 +491,7 @@ section {
   display: block;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
-  color: #45505b;
+  color: #d37509;
 }
 
 .skills .progress .skill .val {
@@ -499,14 +500,14 @@ section {
 }
 
 .skills .progress-bar-wrap {
-  background: #f2f3f5;
+  background: #d37509;
 }
 
 .skills .progress-bar {
   width: 1px;
   height: 10px;
   transition: 0.9s;
-  background-color: #0563bb;
+  background-color: #d37509;
 }
 
 /*--------------------------------------------------------------
@@ -523,7 +524,7 @@ section {
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid #0563bb;
+  border-left: 2px solid #d37509;
   position: relative;
 }
 
@@ -533,7 +534,7 @@ section {
   font-weight: 600;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  color: #0563bb;
+  color: #d37509;
   margin-bottom: 10px;
 }
 
@@ -567,7 +568,7 @@ section {
   left: -9px;
   top: 0;
   background: #fff;
-  border: 2px solid #0563bb;
+  border: 2px solid #d37509;
 }
 
 /*--------------------------------------------------------------
@@ -602,7 +603,7 @@ section {
 
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
-  color: #0563bb;
+  color: #d37509;
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -702,7 +703,7 @@ section {
 }
 
 .portfolio .portfolio-wrap .portfolio-links a:hover {
-  color: #148af9;
+  color: #d37509;
 }
 
 .portfolio .portfolio-wrap:hover::before {
@@ -749,11 +750,11 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #0563bb;
+  border: 1px solid #d37509;
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #0563bb;
+  background-color: #d37509;
 }
 
 .portfolio-details .portfolio-info {
@@ -855,7 +856,7 @@ section {
 }
 
 .services .iconbox-blue i {
-  color: #47aeff;
+  color: #d37509;
 }
 
 .services .iconbox-blue:hover .icon i {
@@ -863,7 +864,7 @@ section {
 }
 
 .services .iconbox-blue:hover .icon path {
-  fill: #47aeff;
+  fill: #d37509;
 }
 
 .services .iconbox-orange i {
@@ -964,7 +965,7 @@ section {
 
 .testimonials .testimonial-item .quote-icon-left,
 .testimonials .testimonial-item .quote-icon-right {
-  color: #90c8fc;
+  color: #d37509;
   font-size: 26px;
 }
 
@@ -996,11 +997,11 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #0563bb;
+  border: 1px solid #d37509;
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #0563bb;
+  background-color: #d37509;
 }
 
 @media (min-width: 992px) {
@@ -1019,7 +1020,7 @@ section {
 
 .contact .info i {
   font-size: 20px;
-  color: #0563bb;
+  color: #d37509;
   float: left;
   width: 44px;
   height: 44px;
@@ -1054,7 +1055,7 @@ section {
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
-  background: #0563bb;
+  background: #d37509;
   color: #fff;
 }
 
@@ -1124,7 +1125,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: #0563bb;
+  background: #d37509;
   border: 0;
   padding: 10px 35px;
   color: #fff;
@@ -1133,7 +1134,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #0678e3;
+  background: #d37509;
 }
 
 @keyframes animate-loading {
@@ -1180,7 +1181,7 @@ section {
 #footer .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #0563bb;
+  background: #d37509;
   color: #fff;
   line-height: 1;
   padding: 8px 0;
@@ -1193,7 +1194,7 @@ section {
 }
 
 #footer .social-links a:hover {
-  background: #0678e3;
+  background: #d37509;
   color: #fff;
   text-decoration: none;
 }
