@@ -1208,32 +1208,48 @@ section {
 }
 /*language-switch-btn*/
 #language-switch-btn {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  width: 40px;
-  height: 40px;
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  width: 45px;
+  height: 45px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #ff7eb3, #ff758c);
-  color: white;
-  border: none;
-  border-radius: 50%;
+  background: transparent;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
   cursor: pointer;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 22px;
   transition: all 0.3s ease-in-out;
-  font-size: 20px;
+  overflow: hidden;
+  padding: 0 10px;
+}
+
+#language-switch-btn i {
+  font-size: 22px;
+}
+
+.language-text {
+  display: none;
+  font-size: 16px;
+  color: #ffffff;
+  margin-left: 10px;
+  transition: opacity 0.3s ease;
 }
 
 #language-switch-btn:hover {
-  background: linear-gradient(135deg, #ff758c, #ff7eb3);
-  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
-  transform: scale(1.1);
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffcc00;
+  border-color: #ffcc00;
+}
+
+#language-switch-btn:hover .language-text {
+  display: inline;
+  opacity: 1;
 }
 
 #language-switch-btn:active {
-  transform: scale(0.95);
+  transform: scale(0.9);
 }
-
-
