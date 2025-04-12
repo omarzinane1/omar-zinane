@@ -6,10 +6,12 @@ function switchLanguage() {
     currentLanguage = "fr";
     updateNavbar(dict_navbar_francais);
     updateAbout(dict_about_francais);
+    updateFacts(dict_facts_francais);
   } else {
     currentLanguage = "en";
     updateNavbar(dict_navbar_anglais);
     updateAbout(dict_about_anglais);
+    updateFacts(dict_facts_anglais);
   }
 }
 
@@ -37,3 +39,12 @@ function updateAbout(aboutDict) {
   document.getElementById("about-freelance").innerText = aboutDict.freelance;
   document.getElementById("about-quote").innerText = aboutDict.quote;
 }
+function updateFacts(factsDict) {
+  document.getElementById("facts-title").innerText = factsDict.title;
+  document.getElementById("facts-intro").innerText = factsDict.intro;
+  document.getElementById("facts-happy-clients").innerText = factsDict.happy_clients;
+  document.getElementById("facts-projects").innerText = factsDict.projects;
+  document.getElementById("facts-rest-hours").innerText = factsDict.rest_hours;
+  document.getElementById("facts-certificates").innerText = factsDict.certificates;
+}
+

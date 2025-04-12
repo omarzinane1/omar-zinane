@@ -62,10 +62,10 @@ const dict_facts_anglais = {
   title: "Facts",
   intro:
     "Great pains are undertaken for the sake of convenience. One must endure some hardships to achieve something desirable. Sometimes it is necessary to flee from something, and it is indeed true that such things are pursued. Even if it is just an appearance, it is a real feeling. Some people are motivated by their desires, but not everyone. No one can prevent the desire for something from taking hold. There are those who are hindered by circumstances beyond their control, but they can still find other ways to achieve their goals. Because sometimes it is necessary to flee, one must make sacrifices in order to achieve success.",
-  happy_clients: 20,
-  projects: 22,
-  rest_hours: 8,
-  certificates: 2,
+  happy_clients: "happy clients",
+  projects: "projects",
+  rest_hours: "rest hours",
+  certificates: "certificates",
 };
 
 // Dictionnaire pour la section "Facts" en français
@@ -73,10 +73,10 @@ const dict_facts_francais = {
   title: "Faits",
   intro:
     "De grands efforts sont entrepris pour la commodité. Il faut endurer certaines difficultés pour obtenir quelque chose de désirable. Parfois, il est nécessaire de fuir quelque chose, et il est vrai que ces choses sont recherchées. Même si ce n'est qu'une apparence, c'est un sentiment réel. Certaines personnes sont motivées par leurs désirs, mais pas tout le monde. Personne ne peut empêcher le désir de quelque chose de prendre le contrôle. Il y en a qui sont freinés par des circonstances indépendantes de leur volonté, mais ils peuvent toujours trouver d'autres moyens d'atteindre leurs objectifs. Parce que parfois, il est nécessaire de fuir, il faut faire des sacrifices pour réussir.",
-  happy_clients: 20,
-  projects: 22,
-  rest_hours: 8,
-  certificates: 2,
+  happy_clients: "Client heureux",
+  projects: "projets",
+  rest_hours: "heures de repos",
+  certificates: "certificats",
 };
 // English version of the Skills section
 const dict_skills_english = {
