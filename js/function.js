@@ -10,7 +10,8 @@ function switchLanguage() {
     updateResume(dict_resume_french);
     updateExperience(dict_resume_french);
     updateServices(dict_services_francais);
-    updateFooterQuote(dict_footer_francais)
+    updateFooterQuote(dict_footer_francais);
+    updateContactMinimal(dict_contact_fr)
   } else {
     currentLanguage = "en";
     updateNavbar(dict_navbar_anglais);
@@ -20,7 +21,8 @@ function switchLanguage() {
     updateResume(dict_resume_english);
     updateExperience(dict_resume_english);
     updateServices(dict_services_anglais);
-    updateFooterQuote(dict_footer_anglais)
+    updateFooterQuote(dict_footer_anglais);
+    updateContactMinimal(dict_contact_en)
   }
 }
 
