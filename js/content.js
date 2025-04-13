@@ -142,42 +142,47 @@ const dict_resume_english = {
   },
   education: [
     {
-      title: "BACCALAUREATE & PHYSICAL SCIENCE",
+      title1: "BACCALAUREATE & PHYSICAL SCIENCE",
       period: "2020 - 2021",
-      establishment: "Sidi Bennour High School/Sidi Bennour/2021",
+      establishment1: "Sidi Bennour High School/Sidi Bennour/2021",
     },
     {
-      title: "TECHNICAL UNIVERSITY DEGREE",
+      title2: "TECHNICAL UNIVERSITY DEGREE",
       period: "2021 - 2023",
-      establishment: "The Higher School of Technology",
+      establishment2: "The Higher School of Technology",
+      description2:
+        "I have a second year at the Higher School of Technology Sidi Bennour (ESTSB)",
     },
     {
-      title:
+      title3:
         "Professional Licenses in IT systems engineering and web technologies",
       period: "2023 - 2024",
-      establishment: "The Sidi Bennour Higher School of Technology (ESTSB)",
+      establishment3: "The Sidi Bennour Higher School of Technology (ESTSB)",
+      description3:
+        "ISITW at the Sidi Bennour Higher School of Technology (ESTSB)",
     },
   ],
   experience: [
     {
-      title: "Internship",
-      period: "April 2024 - June 2024",
-      establishment: "LA RADEEJ, El Jadida",
-      description:
+      headertitle: "Professional Experience",
+      title1: "Internship",
+      period1: "April 2024 - June 2024",
+      establishment1: "LA RADEEJ, El Jadida",
+      description1:
         "I completed an enriching internship at RADEEJ, during which I developed a web application for the computerization of the activities of the Insurance division and Legal.",
     },
     {
-      title: "Internship",
-      period: "April 2023 - June 2023",
-      establishment: "LA RADEEJ, El Jadida",
-      description:
+      title2: "Internship",
+      period2: "April 2023 - June 2023",
+      establishment2: "LA RADEEJ, El Jadida",
+      description2:
         "I developed a web application for calculating participation costs.",
     },
     {
-      title: "Internship",
-      period: "April 2022 - June 2022",
-      establishment: "LA RADEEJ/ELJADIDA",
-      description: "I created a stock management application using Vb.net.",
+      title3: "Internship",
+      period3: "April 2022 - June 2022",
+      establishment3: "LA RADEEJ/ELJADIDA",
+      description3: "I created a stock management application using Vb.net.",
     },
   ],
 };
@@ -197,43 +202,48 @@ const dict_resume_french = {
   },
   education: [
     {
-      title: "BACCALAURÉAT & SCIENCES PHYSIQUES",
+      title1: "BACCALAURÉAT & SCIENCES PHYSIQUES",
       period: "2020 - 2021",
-      establishment: "Lycée Sidi Bennour/Sidi Bennour/2021",
+      establishment1: "Lycée Sidi Bennour/Sidi Bennour/2021",
     },
     {
-      title: "DIPLÔME UNIVERSITAIRE TECHNIQUE",
+      title2: "DIPLÔME UNIVERSITAIRE TECHNIQUE",
       period: "2021 - 2023",
-      establishment: "L'École Supérieure de Technologie",
+      establishment2: "L'École Supérieure de Technologie",
+      description2:
+        "J'ai une deuxième année à l'école supérieure de technologie Sidi Bennour (ESTB)",
     },
     {
-      title:
+      title3:
         "Licences Professionnelles en Ingénierie des Systèmes Informatiques et Technologies Web",
       period: "2023 - 2024",
-      establishment:
+      establishment3:
         "L'École Supérieure de Technologie de Sidi Bennour (ESTSB)",
+      description3:
+        "Ingénierie des Systèmes Informatiques et Technologies Web.",
     },
   ],
   experience: [
     {
-      title: "Stage",
-      period: "Avril 2024 - Juin 2024",
-      establishment: "LA RADEEJ, El Jadida",
-      description:
+      headertitle: "Expérience professionnelle",
+      title1: "Stage",
+      period1: "Avril 2024 - Juin 2024",
+      establishment1: "LA RADEEJ, El Jadida",
+      description1:
         "J'ai effectué un stage enrichissant chez RADEEJ, au cours duquel j'ai développé une application web pour la numérisation des activités de la division Assurance et Juridique.",
     },
     {
-      title: "Stage",
-      period: "Avril 2023 - Juin 2023",
-      establishment: "LA RADEEJ, El Jadida",
-      description:
+      title2: "Stage",
+      period2: "Avril 2023 - Juin 2023",
+      establishment2: "LA RADEEJ, El Jadida",
+      description2:
         "J'ai développé une application web pour le calcul des coûts de participation.",
     },
     {
-      title: "Stage",
-      period: "Avril 2022 - Juin 2022",
-      establishment: "LA RADEEJ/ELJADIDA",
-      description:
+      title3: "Stage",
+      period3: "Avril 2022 - Juin 2022",
+      establishment3: "LA RADEEJ/ELJADIDA",
+      description3:
         "J'ai créé une application de gestion de stock en utilisant Vb.net.",
     },
   ],
@@ -298,6 +308,7 @@ const dict_services_francais = {
     },
   ],
 };
+
 // Dictionnaire pour le Footer en anglais
 const dict_footer_anglais = {
   quote:
@@ -309,5 +320,15 @@ const dict_footer_francais = {
   quote:
     "Le succès ne se résume pas seulement à atteindre vos objectifs ; il s'agit du chemin que vous parcourez, des défis que vous surmontez et des leçons que vous apprenez en cours de route.",
 };
+const dict_contact_en = {
+  phoneTitle: "Call:",
+  successMessage: "Your message has been sent. Thank you!",
+  buttonText: "Send Message",
+};
 
+const dict_contact_fr = {
+  phoneTitle: "Téléphone :",
+  successMessage: "Votre message a été envoyé. Merci !",
+  buttonText: "Envoyer le message",
+};
 
