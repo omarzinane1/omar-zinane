@@ -266,3 +266,18 @@
   new PureCounter();
 
 })()
+/**
+ * language-switch-btn
+ */
+window.addEventListener("scroll", function () {
+  const btn = document.getElementById("language-switch-btn");
+  const heroSection = document.getElementById("hero"); // ID de ta section hero
+
+  const heroBottom = heroSection.offsetTop + heroSection.offsetHeight;
+
+  if (window.scrollY > heroBottom) {
+    btn.classList.add("active");
+  } else {
+    btn.classList.remove("active");
+  }
+});
