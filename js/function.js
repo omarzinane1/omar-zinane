@@ -11,7 +11,8 @@ function switchLanguage() {
     updateExperience(dict_resume_french);
     updateServices(dict_services_francais);
     updateFooterQuote(dict_footer_francais);
-    updateContactMinimal(dict_contact_fr)
+    updateContactMinimal(dict_contact_fr);
+    updateHero(hero_francais)
   } else {
     currentLanguage = "en";
     updateNavbar(dict_navbar_anglais);
@@ -23,6 +24,7 @@ function switchLanguage() {
     updateServices(dict_services_anglais);
     updateFooterQuote(dict_footer_anglais);
     updateContactMinimal(dict_contact_en)
+    updateHero(hero_anglais)
   }
 }
 
@@ -130,6 +132,18 @@ function updateContactMinimal(dict) {
 
 function updateFooterQuote(dict) {
   document.getElementById("footer-quote").innerHTML = dict.quote;
+}
+
+let typedInstance;
+
+function updateHero(dict) {
+  // Update the "I'm / Je suis" part
+  document.getElementById("im").innerHTML = dict.im;
+
+  // Update the data-typed-items attribute
+  const typedElement = document.getElementById("typed");
+  typedElement.setAttribute("data-typed-items", dict.typedItems.join(", "));
+
 }
 
 
