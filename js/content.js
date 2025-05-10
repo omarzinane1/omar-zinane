@@ -1,11 +1,11 @@
 // Dictionnaire pour la barre de navigation (texte uniquement)
 const hero_anglais = {
   im: "I'm",
-  typedItems: ["Developer", "Designer", "Freelancer"]
+  typedItems: ["Developer", "Designer", "Freelancer"],
 };
 const hero_francais = {
   im: "Je suis",
-  typedItems: ["Développeur", "Designer", "Freelance"]
+  typedItems: ["Développeur", "Designer", "Freelance"],
 };
 const dict_navbar_anglais = {
   home: "Home",
@@ -278,9 +278,9 @@ const dict_services_anglais = {
     },
     {
       icon: "bx bx-data",
-      title: "Data Entry",
+      title: "Data Analysis",
       description:
-        "We offer precise and efficient data entry services to help you manage and organize your information reliably.",
+        "We offer data analysis services to transform raw information into actionable insights. Using modern tools and advanced analytical methods, we help you make informed decisions, optimize performance, and gain a deeper understanding of your business processes.",
     },
     {
       icon: "bx bx-cog",
@@ -304,9 +304,9 @@ const dict_services_francais = {
     },
     {
       icon: "bx bx-data",
-      title: "Saisie de Données",
+      title: "Analyse de Données",
       description:
-        "Nous offrons des services de saisie de données précis et efficaces pour vous aider à gérer et organiser vos informations de manière fiable.",
+        "Nous proposons des services d’analyse de données pour transformer vos informations brutes en insights exploitables. Grâce à des outils modernes et des méthodes analytiques avancées, nous vous aidons à prendre des décisions éclairées, à optimiser vos performances et à mieux comprendre vos processus métiers.",
     },
     {
       icon: "bx bx-cog",
@@ -339,4 +339,3 @@ const dict_contact_fr = {
   successMessage: "Votre message a été envoyé. Merci !",
   buttonText: "Envoyer le message",
 };
-
