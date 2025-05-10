@@ -38,7 +38,7 @@ const dict_about_anglais = {
   phone: "phone",
   city: "city",
   age: "Age",
-  degree: "Bachelor's degree",
+  degree: "License diploma",
   email: "omarzinane223@gmail.com",
   freelance: "Available",
   quote:
