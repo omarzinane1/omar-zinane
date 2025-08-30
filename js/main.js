@@ -1,6 +1,6 @@
 /**
-* Name: MyResume
-* Updated: Mar 10 2023 with Bootstrap v5.2.3
+* Name: omar zinane
+* Updated: Mar 30 2025 with Bootstrap v5.2.3
 */
 
 (function() {
@@ -139,10 +139,10 @@
    */
   const typed = select('.typed')
   if (typed) {
-    let typed_strings = typed.getAttribute('data-typed-items')
-    typed_strings = typed_strings.split(',')
+    let typedItems = typed.getAttribute('data-typed-items')
+    typedItems = typedItems.split(',')
     new Typed('.typed', {
-      strings: typed_strings,
+      strings: typedItems,
       loop: true,
       typeSpeed: 100,
       backSpeed: 50,

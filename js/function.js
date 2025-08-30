@@ -136,6 +136,7 @@ function updateFooterQuote(dict) {
 
 let typedInstance;
 
+
 function updateHero(dict) {
   // Update the "I'm / Je suis" part
   document.getElementById("im").innerHTML = dict.im;
@@ -143,6 +144,7 @@ function updateHero(dict) {
   // Update the data-typed-items attribute
   const typedElement = document.getElementById("typed");
   typedElement.setAttribute("data-typed-items", dict.typedItems.join(", "));
+  typedElement.innerHTML = ""; // vide le contenu
 
 }
 

@@ -1,4 +1,0 @@
-Thanks
-
-Name: MyResume
-

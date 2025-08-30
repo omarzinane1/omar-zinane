@@ -1,11 +1,11 @@
 // Dictionnaire pour la barre de navigation (texte uniquement)
 const hero_anglais = {
   im: "I'm",
-  typedItems: ["Developer", "Designer", "Freelancer"],
+  typedItems: ["Full Stack web developer", "Computer support"],
 };
 const hero_francais = {
-  im: "Je suis",
-  typedItems: ["Développeur", "Designer", "Freelance"],
+  im: "I'm",
+  typedItems: ["Developpeur Web Full Stack", "Support informatique"],
 };
 const dict_navbar_anglais = {
   home: "Home",
