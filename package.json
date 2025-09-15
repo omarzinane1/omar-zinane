@@ -1,0 +1,17 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "## À propos de moi Je suis un développeur full stack passionné, avec une solide expérience dans les technologies front-end et back-end. Mon expertise couvre une gamme diversifiée de services, notamment le développement de sites web, d'applications web et de logiciels de bureau. En plus de cela, je propose des services de saisie de données de haute qualité et une gamme complète de solutions digitales pour répondre aux besoins variés de mes clients. Avec mon engagement envers l'innovation et mon souci constant de la qualité, je m'efforce de fournir des produits et des services qui dépassent les attentes et contribuent au succès de mes clients dans un monde numérique en constante évolution.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "express": "^5.1.0",
+    "nodemailer": "^7.0.6"
+  }
+}

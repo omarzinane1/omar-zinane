@@ -916,7 +916,7 @@
             </div>
 
             <div class="col-lg-8 mt-5 mt-lg-0">
-              <form action="" method="post" role="form" class="php-email-form">
+              <form action="http://localhost:3000/send-email" method="post" role="form" class="php-email-form">
                 <div class="row">
                   <div class="col-md-6 form-group">
                     <input
@@ -1032,6 +1032,7 @@
     <script src="js/main.js"></script>
     <script src="js/function.js"></script>
     <script src="js/content.js"></script>
+    <script src="js/server.js"></script>
     <!-- SweetAlert2 -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
@@ -1048,16 +1049,16 @@
           });
         });
     </script>
-    <script
+    <!-- <script
       type="text/javascript"
       src="https://cdn.emailjs.com/dist/email.min.js"
-    ></script>
-    <script type="text/javascript">
+    ></script> -->
+    <!-- <script type="text/javascript">
       (function () {
         emailjs.init("service_37agvuj");
       })();
-    </script>
-    <script type="text/javascript">
+    </script> -->
+    <!-- <script type="text/javascript">
       document
         .querySelector(".php-email-form")
         .addEventListener("submit", function (event) {
@@ -1094,6 +1095,6 @@
               }
             );
         });
-    </script>
+    </script> -->
   </body>
 </html>
