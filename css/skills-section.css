@@ -1,0 +1,322 @@
+/* =============================================================
+   SKILLS SECTION — Thème clair / fond blanc
+   Polices (<head>) :
+   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+   ============================================================= */
+
+/* ---------- Tokens ---------- */
+:root {
+  /* Surfaces */
+  --sk-bg:       #ffffff;
+  --sk-card-bg:  #ffffff;
+
+  /* Text */
+  --sk-text:     #111827;
+  --sk-muted:    #6b7280;
+  --sk-faint:    #9ca3af;
+
+  /* Borders */
+  --sk-bdr:      #e5e7eb;
+  --sk-bdr-h:    #d1d5db;
+
+  /* Tag */
+  --sk-tag-bg:   #f3f4f6;
+  --sk-tag-txt:  #374151;
+
+  /* Radius / shadow */
+  --sk-r:        14px;
+  --sk-r-sm:     8px;
+  --sk-shadow:   0 1px 3px rgba(0,0,0,0.07), 0 4px 16px rgba(0,0,0,0.04);
+  --sk-shadow-h: 0 4px 12px rgba(0,0,0,0.10), 0 8px 32px rgba(0,0,0,0.06);
+
+  /* Typography */
+  --sk-font-h:   'Outfit', sans-serif;
+  --sk-font-b:   'DM Sans', sans-serif;
+
+  /* Transition */
+  --sk-tr:       all 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Accent: Indigo — Web Dev */
+  --c-indigo:    #4f46e5;
+  --c-indigo-bg: #eef2ff;
+  --c-indigo-b:  #c7d2fe;
+  --c-indigo-th: #e0e7ff;
+
+  /* Accent: Violet — AI */
+  --c-violet:    #7c3aed;
+  --c-violet-bg: #f5f3ff;
+  --c-violet-b:  #ddd6fe;
+  --c-violet-th: #ede9fe;
+
+  /* Accent: Teal — Data Eng */
+  --c-teal:      #0d9488;
+  --c-teal-bg:   #f0fdfa;
+  --c-teal-b:    #99f6e4;
+  --c-teal-th:   #ccfbf1;
+
+  /* Accent: Sky — Databases */
+  --c-sky:       #0284c7;
+  --c-sky-bg:    #f0f9ff;
+  --c-sky-b:     #bae6fd;
+  --c-sky-th:    #e0f2fe;
+
+  /* Accent: Amber — Cloud/DevOps */
+  --c-amber:     #b45309;
+  --c-amber-bg:  #fffbeb;
+  --c-amber-b:   #fcd34d;
+  --c-amber-th:  #fef3c7;
+
+  /* Accent: Emerald — IoT */
+  --c-emerald:   #059669;
+  --c-emerald-bg:#ecfdf5;
+  --c-emerald-b: #a7f3d0;
+  --c-emerald-th:#d1fae5;
+
+  /* Accent: Slate — SE */
+  --c-slate:     #475569;
+  --c-slate-bg:  #f8fafc;
+  --c-slate-b:   #cbd5e1;
+  --c-slate-th:  #f1f5f9;
+
+  /* Accent: Stone — Networking */
+  --c-stone:     #78716c;
+  --c-stone-bg:  #fafaf9;
+  --c-stone-b:   #d6d3d1;
+  --c-stone-th:  #f5f5f4;
+}
+
+/* ---------- Section ---------- */
+.sk-section {
+  background: var(--sk-bg);
+  padding: 88px 0 104px;
+  font-family: var(--sk-font-b);
+}
+
+/* ---------- Header ---------- */
+.sk-header {
+  text-align: center;
+  max-width: 580px;
+  margin: 0 auto 60px;
+}
+
+.sk-eyebrow {
+  display: inline-block;
+  font-family: var(--sk-font-b);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--c-indigo);
+  background: var(--c-indigo-bg);
+  border: 1px solid var(--c-indigo-b);
+  padding: 5px 14px;
+  border-radius: 999px;
+  margin-bottom: 18px;
+}
+
+.sk-title {
+  font-family: var(--sk-font-h);
+  font-size: clamp(2rem, 4vw, 2.6rem);
+  font-weight: 600;
+  color: var(--sk-text);
+  letter-spacing: -0.025em;
+  margin: 0 0 14px;
+  line-height: 1.15;
+}
+
+.sk-subtitle {
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--sk-muted);
+  line-height: 1.72;
+  margin: 0;
+}
+
+/* ---------- Grid ---------- */
+.sk-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* ---------- Card base ---------- */
+.sk-card {
+  background: var(--sk-card-bg);
+  border: 1px solid var(--sk-bdr);
+  border-radius: var(--sk-r);
+  padding: 26px 24px 22px;
+  box-shadow: var(--sk-shadow);
+  transition: var(--sk-tr);
+  position: relative;
+  overflow: hidden;
+
+  /* Per-card accent (set by modifier) */
+  --ca:    var(--c-indigo);
+  --ca-bg: var(--c-indigo-bg);
+  --ca-b:  var(--c-indigo-b);
+  --ca-th: var(--c-indigo-th);
+}
+
+/* Colored left border */
+.sk-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 3px; height: 100%;
+  background: var(--ca);
+  opacity: 0.55;
+  border-radius: 3px 0 0 3px;
+  transition: opacity 0.22s;
+}
+
+.sk-card:hover {
+  border-color: var(--ca-b);
+  box-shadow: var(--sk-shadow-h);
+  transform: translateY(-3px);
+}
+
+.sk-card:hover::before {
+  opacity: 1;
+}
+
+/* ---------- Color modifiers ---------- */
+.sk-indigo  { --ca: var(--c-indigo);  --ca-bg: var(--c-indigo-bg);  --ca-b: var(--c-indigo-b);  --ca-th: var(--c-indigo-th);  }
+.sk-violet  { --ca: var(--c-violet);  --ca-bg: var(--c-violet-bg);  --ca-b: var(--c-violet-b);  --ca-th: var(--c-violet-th);  }
+.sk-teal    { --ca: var(--c-teal);    --ca-bg: var(--c-teal-bg);    --ca-b: var(--c-teal-b);    --ca-th: var(--c-teal-th);    }
+.sk-sky     { --ca: var(--c-sky);     --ca-bg: var(--c-sky-bg);     --ca-b: var(--c-sky-b);     --ca-th: var(--c-sky-th);     }
+.sk-amber   { --ca: var(--c-amber);   --ca-bg: var(--c-amber-bg);   --ca-b: var(--c-amber-b);   --ca-th: var(--c-amber-th);   }
+.sk-emerald { --ca: var(--c-emerald); --ca-bg: var(--c-emerald-bg); --ca-b: var(--c-emerald-b); --ca-th: var(--c-emerald-th); }
+.sk-slate   { --ca: var(--c-slate);   --ca-bg: var(--c-slate-bg);   --ca-b: var(--c-slate-b);   --ca-th: var(--c-slate-th);   }
+.sk-stone   { --ca: var(--c-stone);   --ca-bg: var(--c-stone-bg);   --ca-b: var(--c-stone-b);   --ca-th: var(--c-stone-th);   }
+
+/* ---------- Card header ---------- */
+.sk-card-head {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.sk-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  min-width: 36px;
+  background: var(--ca-bg);
+  border: 1px solid var(--ca-b);
+  border-radius: 9px;
+  color: var(--ca);
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.sk-icon svg {
+  width: 16px;
+  height: 16px;
+}
+
+.sk-card-title {
+  font-family: var(--sk-font-h);
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--sk-text);
+  margin: 0 0 3px;
+  line-height: 1.35;
+}
+
+.sk-card-count {
+  font-size: 0.72rem;
+  font-weight: 400;
+  color: var(--sk-faint);
+  margin: 0;
+  letter-spacing: 0.02em;
+}
+
+/* ---------- Divider ---------- */
+.sk-card-head + .sk-tags {
+  padding-top: 4px;
+  border-top: 1px solid var(--sk-bdr);
+}
+
+/* ---------- Tags ---------- */
+.sk-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  padding-top: 14px;
+}
+
+.sk-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--sk-tag-bg);
+  border: 1px solid var(--sk-bdr);
+  color: var(--sk-tag-txt);
+  font-family: var(--sk-font-b);
+  font-size: 0.775rem;
+  font-weight: 400;
+  padding: 5px 11px;
+  border-radius: 6px;
+  cursor: default;
+  transition: var(--sk-tr);
+  white-space: nowrap;
+  line-height: 1;
+}
+
+.sk-tag:hover {
+  background: var(--ca-th);
+  border-color: var(--ca-b);
+  color: var(--ca);
+}
+
+/* Tag with logo icon */
+.sk-tag.sk-tag-logo {
+  padding-left: 7px;
+}
+
+.sk-tag svg {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  border-radius: 3px;
+}
+
+/* ---------- Responsive ---------- */
+
+/* 4 col → 3 col at 1200px */
+@media (max-width: 1200px) {
+  .sk-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* 3 col → 2 col at 900px */
+@media (max-width: 900px) {
+  .sk-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+}
+
+/* 2 col → 1 col at 580px */
+@media (max-width: 580px) {
+  .sk-section {
+    padding: 60px 0 80px;
+  }
+  .sk-header {
+    margin-bottom: 40px;
+  }
+  .sk-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .sk-card {
+    padding: 20px 18px 18px;
+  }
+  .sk-title {
+    font-size: 1.9rem;
+  }
+}
